@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #111;
   color: white;
   margin: 0 0;
 }
@@ -102,7 +102,7 @@ h1 {
 .card-item {
   width: 25%;
   margin: 0 0;
-  outline: 1px solid black;
+  outline: none;
   height: 70vh;
 }
 
@@ -111,7 +111,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  font-size: 5vw;
+  font-size: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,6 +141,31 @@ li {
   opacity: 1;
 }
 
+@media only screen and (max-width: 1366px) {
+  h1 {
+    font-size: 3rem;
+  }
+  header span {
+    font-size: 2rem;
+  }
+  .nav {
+    font-size: 2rem;
+  }
+  .genres::before {
+    content: none;
+  }
+  .genres::after {
+    content: none;
+  }
+  .card-item {
+    width: 33%;
+    height: 70vh;
+  }
+  .card {
+    background-size: 100% 100%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   h1 {
     font-size: 3rem;
@@ -163,6 +188,7 @@ li {
   }
   .card {
     background-size: 100% 100%;
+    font-size: 5vw;
   }
 }
 
@@ -219,5 +245,6 @@ li {
   }
   .card {
     background-size: 100% 100%;
+    font-size: 7vw;
   }
 }
